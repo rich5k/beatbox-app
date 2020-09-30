@@ -4,6 +4,8 @@
     background-color: black;
     display: flex;
     flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
 }
 body{
     display: flex;
