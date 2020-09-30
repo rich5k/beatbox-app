@@ -11,3 +11,8 @@ body{
     justify-content: center;
     align-items: center;
 }
+.beat{
+    width: 120px;
+    height: 120px;
+    background-color: aqua;
+}
