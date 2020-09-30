@@ -2,6 +2,8 @@
     width: 600px;
     height: 600px;
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
 }
 body{
     display: flex;
@@ -15,4 +17,5 @@ body{
     width: 120px;
     height: 120px;
     background-color: aqua;
+    flex-basis: 29%;
 }
