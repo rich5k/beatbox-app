@@ -18,6 +18,7 @@ body{
 .beat{
     width: 120px;
     height: 120px;
-    background-color: aqua;
+    background-color: rgb(17, 233, 143);
     flex-basis: 29%;
+    
 }
