@@ -35,5 +35,6 @@ body{
     border-radius: 10px;
     border: 5px solid rgb(17, 233, 143);
     font-size: 2em;
+    color: white;
     font-family: sans-serif;
 }
