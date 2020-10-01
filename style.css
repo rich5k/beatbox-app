@@ -28,7 +28,7 @@ body{
 .button{
     width: 120px;
     height: 120px;
-    background-color: rgb(248, 245, 43);
+    /* background-color: rgb(248, 245, 43); */
     display: flex;
     justify-content: center;
     align-items: center;
