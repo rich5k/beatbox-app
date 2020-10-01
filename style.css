@@ -19,7 +19,6 @@ body{
 .beat{
     width: 150px;
     height: 150px;
-    /* background-color: rgb(17, 233, 143); */
     flex-basis: 29%;
     display: flex;
     justify-content: center;
@@ -28,7 +27,6 @@ body{
 .button{
     width: 120px;
     height: 120px;
-    /* background-color: rgb(248, 245, 43); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,4 +35,39 @@ body{
     font-size: 2em;
     color: white;
     font-family: sans-serif;
+}
+
+footer{
+    color: white;
+    background: #000;
+    width: 1350px;
+    text-align: center;
+    animation:  color-change 10s ease-in-out infinite;
+}
+
+@keyframes color-change{
+    0%{
+        background: #000;
+        color: white;
+    }
+    16%{
+        background:#0079C4;
+    }
+    32%{
+        background:#FAAC86;
+    }
+    48%{
+        background:#E61F34;
+    }
+    64%{
+        background:#C71A2E;
+    }
+    80%{
+        background: #FFD63E;
+        color: black;
+    }
+    100%{
+        background: #FFD53B;
+        color: black;
+    }
 }
