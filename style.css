@@ -15,6 +15,9 @@ body{
     margin: 0;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background: url(./assets/bck-image1.jpg);
+    background-size: cover;
 }
 .beat{
     width: 150px;
@@ -43,6 +46,7 @@ footer{
     width: 1350px;
     text-align: center;
     animation:  color-change 10s ease-in-out infinite;
+    margin-top: 30px;
 }
 
 @keyframes color-change{
