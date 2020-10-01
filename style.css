@@ -19,7 +19,7 @@ body{
 .beat{
     width: 150px;
     height: 150px;
-    background-color: rgb(17, 233, 143);
+    /* background-color: rgb(17, 233, 143); */
     flex-basis: 29%;
     display: flex;
     justify-content: center;
