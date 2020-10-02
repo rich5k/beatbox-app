@@ -1,4 +1,4 @@
 
 document.addEventListener('keydown',()=>{
-    console.log(event);
+    console.log(event.key);
 })
