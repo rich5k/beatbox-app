@@ -41,11 +41,11 @@ let beats={
     },
 }
 const playBeat= (buttonKey)=>{
-    if(buttonKey== 'a'){
-        let audio= new Audio('./assets/drum snare.mp3');
-        audio.currentTime=0;//audio has not finished yet, reset it
-        audio.play();
-    }
+    let audiosrc= beats(buttonKey);
+    let audio= new Audio(audiosrc);
+    audio.currentTime=0;//audio has not finished yet, reset it
+    audio.play();
+    
 }
 document.addEventListener('keydown',()=>{
     console.log(event.key);
