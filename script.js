@@ -5,7 +5,7 @@
 //TODO: Set colors programatically
 window.onload=()=>{
     
-    setColors();
+    setButtons();
 }
 let beats={
     "a": {
@@ -45,11 +45,15 @@ let beats={
         color: "aqua"
     }
 }
-const setColors=()=>{
+const setButtons=()=>{
     for (let beatKey in beats){
         let beat =beats[beatKey];
         const element= document.getElementById(beatKey);
         element.style.borderColor= beat.color;
+        element.addEventListener('transitionend',()=>{
+          element.style.backgroundColor= "transparent";
+          element.style.boxShadow= 'none';
+        })
     }
 }
 const onButtonPress = (buttonKey)=>{
