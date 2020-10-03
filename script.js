@@ -2,6 +2,7 @@
 //TODO: Create a key listener
 //TODO: Connect key press play a beat
 //TODO: Create a databasae of beats
+//TODO: Set colors programatically
 
 let beats={
     "a": "./assets/drum snare.mp3",
@@ -13,6 +14,9 @@ let beats={
     "j": "./assets/medium tom.mp3",
     "k": "./assets/drum sticks.mp3",
     "l": "./assets/ride cymbal rattle.mp3"
+}
+const setColors=()=>{
+    
 }
 const playBeat= (buttonKey)=>{
     let audioSrc= beats[buttonKey];
