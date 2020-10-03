@@ -48,10 +48,14 @@ let beats={
 const setColors=()=>{
     for (let beatKey in beats){
         let beat =beats[beatKey];
-        console.log(beat);
         const element= document.getElementById(beatKey);
         element.style.borderColor= beat.color;
     }
+}
+const onButtonPress = (buttonKey)=>{
+    
+    const element= document.getElementById(buttonKey);
+    element.style.backgroundColor= beats[buttonKey].color;
 }
 const playBeat= (buttonKey)=>{
     let audioSrc= beats[buttonKey].beat;
@@ -63,5 +67,6 @@ const playBeat= (buttonKey)=>{
 document.addEventListener('keydown',()=>{
     console.log(event.key);
     playBeat(event.key);
+    onButtonPress(event.key);
 })
 
