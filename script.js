@@ -3,7 +3,10 @@
 //TODO: Connect key press play a beat
 //TODO: Create a databasae of beats
 //TODO: Set colors programatically
-
+window.onload=()=>{
+    
+    setColors();
+}
 let beats={
     "a": "./assets/drum snare.mp3",
     "s": "./assets/bass drum.mp3",
@@ -16,7 +19,8 @@ let beats={
     "l": "./assets/ride cymbal rattle.mp3"
 }
 const setColors=()=>{
-    
+    const element= document.getElementById('f');
+    element.style.borderColor= "#0079C4" 
 }
 const playBeat= (buttonKey)=>{
     let audioSrc= beats[buttonKey];
