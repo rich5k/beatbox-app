@@ -46,11 +46,15 @@ let beats={
     }
 }
 const setColors=()=>{
-    const element= document.getElementById('f');
-    element.style.borderColor= "" 
+    for (let beatKey in beats){
+        let beat =beats[beatKey];
+        console.log(beat);
+        const element= document.getElementById(beatKey);
+        element.style.borderColor= beat.color;
+    }
 }
 const playBeat= (buttonKey)=>{
-    let audioSrc= beats[buttonKey];
+    let audioSrc= beats[buttonKey].beat;
     let audio= new Audio(audioSrc);
     audio.currentTime=0;//audio has not finished yet, reset it
     audio.play();
