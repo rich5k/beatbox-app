@@ -8,19 +8,46 @@ window.onload=()=>{
     setColors();
 }
 let beats={
-    "a": "./assets/drum snare.mp3",
-    "s": "./assets/bass drum.mp3",
-    "d": "./assets/crash cymbal.mp3",
-    "f": "./assets/hi-hat.mp3",
-    "g": "./assets/floor tom.mp3",
-    "h": "./assets/china cymbal.mp3",
-    "j": "./assets/medium tom.mp3",
-    "k": "./assets/drum sticks.mp3",
-    "l": "./assets/ride cymbal rattle.mp3"
+    "a": {
+        beat:"./assets/drum snare.mp3",
+        color: "#E61F34"
+    },
+    "s": {
+        beat: "./assets/bass drum.mp3",
+        color: "green"
+    },
+    "d": {
+        beat: "./assets/crash cymbal.mp3",
+        color: "yellow"
+    },
+    "f": {
+        beat: "./assets/hi-hat.mp3",
+        color:"#0079C4"
+    },
+    "g": {
+        beat: "./assets/floor tom.mp3",
+        color: "white"
+    },
+    "h": {
+        beat: "./assets/china cymbal.mp3",
+        color: "orange"
+    },
+    "j": {
+        beat: "./assets/medium tom.mp3",
+        color: "purple"
+    },
+    "k": {
+        beat: "./assets/drum sticks.mp3",
+        color: "grey"
+    },
+    "l": {
+        beat: "./assets/ride cymbal rattle.mp3",
+        color: "aqua"
+    }
 }
 const setColors=()=>{
     const element= document.getElementById('f');
-    element.style.borderColor= "#0079C4" 
+    element.style.borderColor= "" 
 }
 const playBeat= (buttonKey)=>{
     let audioSrc= beats[buttonKey];
