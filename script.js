@@ -71,9 +71,11 @@ const playBeat= (buttonKey)=>{
 }
 const darkButton= document.querySelector('button');
 const body = document.querySelector('body');
+const beatbox= document.querySelector('.beatbox');
 darkButton.addEventListener('click',()=>{
     body.classList.toggle('dark-body');
-    darkButton.classList.toggle('dark-button')
+    darkButton.classList.toggle('dark-button');
+    beatbox.classList.toggle('.dark-beatbox');
     console.log('darkmode working');
 })
 document.addEventListener('keydown',()=>{
