@@ -36,6 +36,10 @@ body{
     background: url(./assets/bck-image1.jpg);
     background-size: cover;
 }
+.dark-body{
+    background: url(./assets/fullmoon2.jpg);
+    background-size: cover;
+}
 .beat{
     width: 150px;
     height: 150px;

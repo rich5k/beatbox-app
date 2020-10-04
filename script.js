@@ -72,7 +72,9 @@ const playBeat= (buttonKey)=>{
 const darkButton= document.querySelector('button');
 const body = document.querySelector('body');
 darkButton.addEventListener('click',()=>{
-    body.classList.add('dark-body');
+    body.classList.toggle('dark-body');
+    darkButton.classList.toggle('dark-button')
+    console.log('darkmode working');
 })
 document.addEventListener('keydown',()=>{
     console.log(event.key);
