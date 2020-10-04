@@ -22,6 +22,9 @@ button{
     align-self: flex-end;
     cursor: pointer;
 }
+button:hover{
+    box-shadow: 3px 3px 6px 6px #000;
+}
 body{
     display: flex;
     width: 100%;
