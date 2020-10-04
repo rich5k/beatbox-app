@@ -69,6 +69,11 @@ const playBeat= (buttonKey)=>{
     audio.play();
     
 }
+const darkButton= document.querySelector('button');
+const body = document.querySelector('body');
+darkButton.addEventListener('click',()=>{
+    body.classList.add('dark-body');
+})
 document.addEventListener('keydown',()=>{
     console.log(event.key);
     playBeat(event.key);
