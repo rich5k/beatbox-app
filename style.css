@@ -63,39 +63,41 @@ body{
   /* border-color: white; */
 }
 .dark-beatbox span:nth-child(1){
-  top: 0;
-  left: -100%;
-  width: 100%;
+  top: 72px;
+  left: 15%;
+  width: 10%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #03e9f4);
   animation: animate1 1s linear infinite;
 }
 @keyframes animate1 {
   0%{
-    left: -100%;
+    left: 15%;
   }
   50%,100%{
-    left: 100%;
+    left: 65%;
+    opacity: 0;
   }
 }
 .dark-beatbox span:nth-child(2){
-  top: -100%;
-  right: 0;
+  top: 7%;
+  right: 28%;
   width: 2px;
-  height: 100%;
+  height: 20%;
   background: linear-gradient(180deg, transparent, #03e9f4);
   animation: animate2 1s linear infinite;
-  animation-delay: 0.25s;
+  animation-delay: 0.3s;
 }
 @keyframes animate2 {
   0%{
-    top: -100%;
+    top: 7%;
   }
   50%,100%{
-    top: 100%;
+    top: 65%;
+    opacity: 0;
   }
 }
-.dark-beatbox span:nth-child(3){
+/* .dark-beatbox span:nth-child(3){
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -103,7 +105,7 @@ body{
   background: linear-gradient(270deg, transparent, #03e9f4);
   animation: animate3 1s linear infinite;
   animation-delay: 0.5s;
-}
+} */
 @keyframes animate3 {
   0%{
     right: -100%;
@@ -112,7 +114,7 @@ body{
     right: 100%;
   }
 }
-.dark-beatbox span:nth-child(4){
+/* .dark-beatbox span:nth-child(4){
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -120,7 +122,7 @@ body{
   background: linear-gradient(360deg, transparent, #03e9f4);
   animation: animate4 1s linear infinite;
   animation-delay: 0.75s;
-}
+} */
 @keyframes animate4 {
   0%{
     bottom: -100%;
@@ -129,6 +131,7 @@ body{
     bottom: 100%;
   }
 }
+
 .beat{
     width: 150px;
     height: 150px;
@@ -137,6 +140,53 @@ body{
     justify-content: center;
     align-items: center;
 }
+.dark-beatbutton{
+    border-color: white;
+}
+.dark-beatbutton span{
+  position: absolute;
+  display: block;
+  /* border-color: white; */
+}
+.dark-beatbutton span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+.dark-beatbutton span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+.dark-beatbutton span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.dark-beatbutton span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
 .button{
     width: 120px;
     height: 120px;

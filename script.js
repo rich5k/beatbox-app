@@ -75,7 +75,7 @@ const beatbox= document.querySelector('.beatbox');
 darkButton.addEventListener('click',()=>{
     body.classList.toggle('dark-body');
     darkButton.classList.toggle('dark-button');
-    beatbox.classList.toggle('.dark-beatbox');
+    beatbox.classList.toggle('dark-beatbox');
     console.log('darkmode working');
 })
 document.addEventListener('keydown',()=>{
