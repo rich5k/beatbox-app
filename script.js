@@ -61,7 +61,6 @@ const onButtonPress = (buttonKey)=>{
     const element= document.getElementById(buttonKey);
     element.style.backgroundColor= beats[buttonKey].color;
     element.style.boxShadow= `0px 0px 17px 0px ${beats[buttonKey].color}`;
-    // console.log(element.style.boxShadow= '0px 0px 17px 0px ${beats[buttonKey].color}');
 }
 const playBeat= (buttonKey)=>{
     let audioSrc= beats[buttonKey].beat;
