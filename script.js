@@ -91,7 +91,10 @@ for(let i =0; i<bbuttons.length;i++){
 }
 function buttonTap(button){
     return function(){
-        console.log(button.innerText+' was touched');
+        let letter= button.innerText.toLowerCase();
+        console.log(letter);
+        playBeat(letter);
+        onButtonPress(letter);
     }
 }
 
