@@ -72,6 +72,7 @@ const playBeat= (buttonKey)=>{
 const darkButton= document.querySelector('button');
 const body = document.querySelector('body');
 const beatbox= document.querySelector('.beatbox');
+const bbuttons =document.querySelectorAll('.button');
 darkButton.addEventListener('click',()=>{
     body.classList.toggle('dark-body');
     darkButton.classList.toggle('dark-button');
@@ -83,4 +84,14 @@ document.addEventListener('keydown',()=>{
     playBeat(event.key);
     onButtonPress(event.key);
 })
+
+for(let i =0; i<bbuttons.length;i++){
+    bbuttons[i].addEventListener('touchend',buttonTap(bbuttons[i]));
+
+}
+function buttonTap(button){
+    return function(){
+        console.log(button.innerText+' was touched');
+    }
+}
 
